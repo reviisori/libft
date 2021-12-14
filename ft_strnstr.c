@@ -6,7 +6,7 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/11 12:55:39 by altikka           #+#    #+#             */
-/*   Updated: 2021/12/13 19:04:22 by altikka          ###   ########.fr       */
+/*   Updated: 2021/12/14 17:32:02 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,13 @@ char	*ft_strnstr(char const *haystack, char const *needle, size_t len)
 
 	if (needle[0] == '\0')
 		return ((char *) haystack);
+	if (len == 0)
+		return ((char *) NULL);
 	needle_len = ft_strlen(needle);
 	haystack_len = ft_strlen(haystack);
 	if (len < needle_len || haystack_len < needle_len)
 		return ((char *) NULL);
-	while (len != 0 && haystack != NULL)
+	while (len != 0 && haystack)
 	{
 		if (len >= needle_len && ft_strncmp(haystack, needle, needle_len) == 0)
 			return ((char *) haystack);
