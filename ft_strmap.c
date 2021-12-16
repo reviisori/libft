@@ -6,7 +6,7 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 15:55:53 by altikka           #+#    #+#             */
-/*   Updated: 2021/12/03 17:37:24 by altikka          ###   ########.fr       */
+/*   Updated: 2021/12/16 15:06:14 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,5 +33,5 @@ char	*ft_strmap(char const *s, char (*f)(char))
 		fresh[i] = '\0';
 		return (fresh);
 	}
-	return ((void *) NULL);
+	return ((char *) NULL);
 }

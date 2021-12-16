@@ -6,7 +6,7 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 16:39:54 by altikka           #+#    #+#             */
-/*   Updated: 2021/12/02 11:55:17 by altikka          ###   ########.fr       */
+/*   Updated: 2021/12/16 14:36:38 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memcpy(void *dst, void const *src, size_t n)
 	size_t	i;
 
 	if (!dst && !src)
-		return (NULL);
+		return (dst);
 	i = 0;
 	while (i < n)
 	{

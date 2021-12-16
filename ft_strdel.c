@@ -6,7 +6,7 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/17 12:34:10 by altikka           #+#    #+#             */
-/*   Updated: 2021/12/02 16:17:37 by altikka          ###   ########.fr       */
+/*   Updated: 2021/12/16 15:08:28 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,6 @@ void	ft_strdel(char **as)
 	if (as != NULL)
 	{
 		free(*as);
-		*as = ((char *) NULL);
+		*as = NULL;
 	}
 }

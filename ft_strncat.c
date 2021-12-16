@@ -6,17 +6,19 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 18:24:16 by altikka           #+#    #+#             */
-/*   Updated: 2021/11/18 15:24:29 by altikka          ###   ########.fr       */
+/*   Updated: 2021/12/16 14:44:02 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strncat(char *s1, char *s2, size_t n)
+char	*ft_strncat(char *s1, char const *s2, size_t n)
 {
 	size_t	offset;
 	size_t	i;
 
+	if (n == 0)
+		return (s1);
 	offset = ft_strlen(s1);
 	i = 0;
 	while (i < n && s2[i])

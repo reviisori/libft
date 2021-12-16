@@ -6,7 +6,7 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/16 16:59:46 by altikka           #+#    #+#             */
-/*   Updated: 2021/11/18 14:29:10 by altikka          ###   ########.fr       */
+/*   Updated: 2021/12/16 15:08:44 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,6 @@ void	ft_memdel(void **ap)
 	if (ap != NULL)
 	{
 		free(*ap);
-		*ap = ((void *) NULL);
+		*ap = NULL;
 	}
 }

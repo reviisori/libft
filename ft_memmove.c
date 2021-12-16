@@ -6,7 +6,7 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/15 11:46:17 by altikka           #+#    #+#             */
-/*   Updated: 2021/12/02 12:29:14 by altikka          ###   ########.fr       */
+/*   Updated: 2021/12/16 14:40:26 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ void	*ft_memmove(void *dst, void const *src, size_t len)
 {
 	size_t	i;
 
-	if (dst == src || len == 0)
-		return ((void *) dst);
+	if (len == 0 || dst == src)
+		return (dst);
 	if (dst < src)
 	{
 		i = 0;
@@ -37,5 +37,5 @@ void	*ft_memmove(void *dst, void const *src, size_t len)
 		}
 		((unsigned char *) dst)[i] = ((unsigned char *) src)[i];
 	}
-	return ((void *) dst);
+	return (dst);
 }

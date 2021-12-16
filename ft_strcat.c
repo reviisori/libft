@@ -6,13 +6,13 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 16:40:40 by altikka           #+#    #+#             */
-/*   Updated: 2021/11/05 17:56:30 by altikka          ###   ########.fr       */
+/*   Updated: 2021/12/16 14:41:53 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcat(char *s1, char *s2)
+char	*ft_strcat(char *s1, char const *s2)
 {
 	size_t	offset;
 	size_t	i;
@@ -25,6 +25,6 @@ char	*ft_strcat(char *s1, char *s2)
 		offset++;
 		i++;
 	}
-	s1[offset] = s2[i];
+	s1[offset] = '\0';
 	return (s1);
 }

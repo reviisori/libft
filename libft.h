@@ -6,7 +6,7 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:46:38 by altikka           #+#    #+#             */
-/*   Updated: 2021/12/07 15:23:16 by altikka          ###   ########.fr       */
+/*   Updated: 2021/12/16 14:42:32 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,8 @@ int		ft_strncmp(char const *s1, char const *s2, size_t n);
 char	*ft_strcpy(char *dst, char const *src);
 char	*ft_strncpy(char *dst, char const *src, size_t n);
 char	*ft_strdup(char const *src);
-char	*ft_strcat(char *s1, char *s2);
-char	*ft_strncat(char *s1, char *s2, size_t n);
+char	*ft_strcat(char *s1, char const *s2);
+char	*ft_strncat(char *s1, char const *s2, size_t n);
 size_t	ft_strlcat(char *dst, char const *src, size_t dstsize);
 char	*ft_strchr(char const *s, int c);
 char	*ft_strrchr(char const *s, int c);
