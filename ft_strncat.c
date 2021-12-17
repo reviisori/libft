@@ -6,7 +6,7 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 18:24:16 by altikka           #+#    #+#             */
-/*   Updated: 2021/12/16 17:15:52 by altikka          ###   ########.fr       */
+/*   Updated: 2021/12/17 12:23:44 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ char	*ft_strncat(char *s1, char const *s2, size_t n)
 	size_t	i;
 
 	offset = ft_strlen(s1);
-	if (n == 0)
-		return (s1);
 	i = 0;
 	while (i < n && s2[i])
 	{
