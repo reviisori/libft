@@ -6,7 +6,7 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/23 15:39:42 by altikka           #+#    #+#             */
-/*   Updated: 2021/12/02 15:32:26 by altikka          ###   ########.fr       */
+/*   Updated: 2021/12/22 14:15:48 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ char	*ft_itoa(int n)
 	char	*ptr;
 	int		offset;
 
-	ptr = (char *)malloc(sizeof(*ptr) * (ft_intlen(n) + 1));
+	ptr = (char *)malloc(sizeof(*ptr) * ((unsigned long ) ft_intlen(n) + 1));
 	if (ptr == NULL)
 		return ((char *) NULL);
 	offset = 0;

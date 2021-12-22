@@ -6,7 +6,7 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 19:10:02 by altikka           #+#    #+#             */
-/*   Updated: 2021/11/23 16:03:23 by altikka          ###   ########.fr       */
+/*   Updated: 2021/12/22 14:16:23 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,6 @@ void	ft_putnbr(int n)
 			ft_putnbr(n % 10);
 		}
 		else
-			ft_putchar(n + '0');
+			ft_putchar((char )(n + '0'));
 	}
 }

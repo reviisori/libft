@@ -6,7 +6,7 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/22 12:35:11 by altikka           #+#    #+#             */
-/*   Updated: 2021/12/03 17:25:34 by altikka          ###   ########.fr       */
+/*   Updated: 2021/12/22 14:17:51 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,7 +77,7 @@ char	**ft_strsplit(char const *s, char c)
 		{
 			ptr = (char *) s;
 			s = ft_nextchr(s, c);
-			arr[i] = ft_strndup(ptr, s - ptr);
+			arr[i] = ft_strndup(ptr, (size_t)(s - ptr));
 			if (arr[i] == NULL)
 				return ((char **) ft_free_arr(arr, i));
 			i++;
