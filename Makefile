@@ -6,7 +6,7 @@
 #    By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/08 13:27:42 by altikka           #+#    #+#              #
-#    Updated: 2022/06/03 12:40:11 by altikka          ###   ########.fr        #
+#    Updated: 2022/06/15 19:33:18 by altikka          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,30 +30,60 @@ SRCS = ft_putchar.c ft_putstr.c ft_putendl.c ft_putnbr.c ft_strlen.c \
 	   ft_vecnew.c ft_vecdel.c ft_veccpy.c ft_vecresize.c ft_vecpush.c \
 	   ft_vecappend.c ft_vecncat.c
 
+PRINTF_INCS = -I. -I./ft_printf/includes
+PRINTF_DIR = ft_printf/src/
+
+PRINTF_SRCS = $(PRINTF_DIR)ft_printf.c \
+	   $(PRINTF_DIR)ft_vasprintf.c \
+	   $(PRINTF_DIR)utilities.c \
+	   $(PRINTF_DIR)press.c \
+	   $(PRINTF_DIR)press_type.c \
+	   $(PRINTF_DIR)inves_flags.c \
+	   $(PRINTF_DIR)inves_width.c \
+	   $(PRINTF_DIR)inves_preci.c \
+	   $(PRINTF_DIR)inves_length.c \
+	   $(PRINTF_DIR)tc_char.c \
+	   $(PRINTF_DIR)tc_dbl.c \
+	   $(PRINTF_DIR)round_dbl.c \
+	   $(PRINTF_DIR)tc_len.c \
+	   $(PRINTF_DIR)tc_num.c \
+	   $(PRINTF_DIR)tc_ptr.c \
+	   $(PRINTF_DIR)tc_str.c \
+	   $(PRINTF_DIR)pad_nums_front.c \
+	   $(PRINTF_DIR)pad_dbls_front.c \
+	   $(PRINTF_DIR)pad_inf.c \
+	   $(PRINTF_DIR)handlers.c
+
 OBJS = $(SRCS:.c=.o)
+PRINTF_OBJS = ft_printf.o ft_vasprintf.o utilities.o press.o press_type.o \
+	   inves_flags.o inves_width.o inves_preci.o inves_length.o \
+	   tc_char.o tc_dbl.o round_dbl.o tc_len.o tc_num.o tc_ptr.o tc_str.o \
+	   pad_nums_front.o pad_dbls_front.o pad_inf.o handlers.o
 
 FLGS = -Wall -Wextra -Werror -O3
 
 EOC = \033[0m
 LGRAY = \033[38;5;243m
 GREEN = \033[38;5;70m
+BLUE = \033[38;5;25m
+RUST = \033[38;5;130m
 YELLOW = \033[38;5;220m
 
 all: $(NAME)
 
 $(NAME):
-	@echo "$(LGRAY)[libft] $(GREEN)Making object files...$(EOC)"
-	@gcc -c $(FLGS) $(SRCS)
-	@echo "$(LGRAY)[libft] $(GREEN)Creating library...$(EOC)"
-	@ar rcs $(NAME) $(OBJS)
-	@echo "$(LGRAY)[libft] $(GREEN)Library created!$(EOC)"
+	@echo "$(LGRAY)[libft] $(BLUE)Making object files...$(EOC)"
+	@gcc -c $(FLGS) $(PRINTF_INCS) $(SRCS) $(PRINTF_SRCS)
+	@echo "$(LGRAY)[libft] $(BLUE)Creating library...$(EOC)"
+	@ar rcs $(NAME) $(OBJS) $(PRINTF_OBJS)
+	@echo "$(LGRAY)[libft] $(BLUE)Library created!$(EOC)"
 
 clean:
-	@echo "$(LGRAY)[libft] $(YELLOW)Cleaning object files...$(EOC)"
-	@rm -f $(OBJS)
+	@echo "$(LGRAY)[libft] $(RUST)Cleaning object files...$(EOC)"
+	@rm -f $(OBJS) $(PRINTF_OBJS)
 
 fclean: clean
-	@echo "$(LGRAY)[libft] $(YELLOW)Removing library...$(EOC)"
+	@echo "$(LGRAY)[libft] $(RUST)Removing library...$(EOC)"
 	@rm -f $(NAME)
 
 re: fclean all
