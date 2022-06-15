@@ -6,10 +6,11 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 12:38:15 by altikka           #+#    #+#             */
-/*   Updated: 2022/06/06 22:35:52 by altikka          ###   ########.fr       */
+/*   Updated: 2022/06/15 19:49:56 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include "vec.h"
 
 int	ft_vecresize(t_vec *src, size_t new_size)

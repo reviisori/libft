@@ -6,10 +6,11 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 13:34:14 by altikka           #+#    #+#             */
-/*   Updated: 2022/05/08 22:29:54 by altikka          ###   ########.fr       */
+/*   Updated: 2022/06/15 19:47:58 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include "vec.h"
 
 int	ft_vecappend(t_vec *dest, t_vec *src)
