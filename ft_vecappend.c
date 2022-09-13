@@ -6,7 +6,7 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 13:34:14 by altikka           #+#    #+#             */
-/*   Updated: 2022/06/15 19:47:58 by altikka          ###   ########.fr       */
+/*   Updated: 2022/09/13 14:08:37 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,10 +27,10 @@ int	ft_vecappend(t_vec *dest, t_vec *src)
 	new_size = dest->type * dest->len + src->type * src->len;
 	if (dest->alloc_size < new_size)
 	{
-		if (dest->alloc_size * 2 < new_size)
+		if (dest->alloc_size * RESIZE_FAC < new_size)
 			ret = ft_vecresize(dest, new_size);
 		else
-			ret = ft_vecresize(dest, dest->alloc_size * 2);
+			ret = ft_vecresize(dest, dest->alloc_size * RESIZE_FAC);
 		if (ret < 0)
 			return (-1);
 	}
