@@ -6,7 +6,7 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 09:19:35 by altikka           #+#    #+#             */
-/*   Updated: 2022/05/02 16:59:37 by altikka          ###   ########.fr       */
+/*   Updated: 2022/09/13 14:08:47 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 # define VEC_H
 
 # include "libft.h"
+
+# define RESIZE_FAC 2
 
 typedef struct s_vec
 {
