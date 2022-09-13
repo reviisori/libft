@@ -6,7 +6,7 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/27 14:11:05 by altikka           #+#    #+#             */
-/*   Updated: 2022/06/15 19:49:25 by altikka          ###   ########.fr       */
+/*   Updated: 2022/09/13 14:09:21 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,10 +26,10 @@ int	ft_vecncat(t_vec *dest, const void *src, size_t n)
 	new_size = (dest->len + n) * dest->type;
 	if (dest->alloc_size < new_size)
 	{
-		if (dest->alloc_size * 2 < new_size)
+		if (dest->alloc_size * RESIZE_FAC < new_size)
 			ret = ft_vecresize(dest, new_size);
 		else
-			ret = ft_vecresize(dest, dest->alloc_size * 2);
+			ret = ft_vecresize(dest, dest->alloc_size * RESIZE_FAC);
 		if (ret < 0)
 			return (-1);
 	}
