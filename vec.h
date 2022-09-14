@@ -6,7 +6,7 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 09:19:35 by altikka           #+#    #+#             */
-/*   Updated: 2022/09/14 15:30:34 by altikka          ###   ########.fr       */
+/*   Updated: 2022/09/14 16:02:47 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,6 @@ int		ft_vecfrom(t_vec *dest, const void *src, size_t n, size_t type);
 void	*ft_vecget(t_vec *src, size_t index);
 int		ft_vecpop(void *dest, t_vec *src);
 int		ft_vecinsert(t_vec *dest, const void *src, size_t index);
+int		ft_vecremove(t_vec *src, size_t index);
 
 #endif
