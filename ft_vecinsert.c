@@ -6,7 +6,7 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 11:21:35 by altikka           #+#    #+#             */
-/*   Updated: 2022/09/14 15:40:34 by altikka          ###   ########.fr       */
+/*   Updated: 2022/09/14 16:05:38 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	ft_vecinsert(t_vec *dest, const void *src, size_t index)
 		ft_vecget(dest, index + 1),
 		ft_vecget(dest, index),
 		(dest->len - index) * dest->type);
-	ft_memcopy(
+	ft_memcpy(
 		ft_vecget(dest, index),
 		src,
 		dest->type);
