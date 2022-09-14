@@ -6,7 +6,7 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/25 09:19:35 by altikka           #+#    #+#             */
-/*   Updated: 2022/09/13 18:24:46 by altikka          ###   ########.fr       */
+/*   Updated: 2022/09/14 09:45:39 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,13 @@ typedef struct s_vec
 
 int		ft_vecnew(t_vec *dest, size_t init_len, size_t type);
 void	ft_vecdel(t_vec *src);
-int		ft_vecfrom(t_vec *dest, const void *src, size_t n, size_t type);
 int		ft_veccpy(t_vec *dest, t_vec *src);
 int		ft_vecresize(t_vec *src, size_t new_size);
 int		ft_vecpush(t_vec *dest, const void *src);
-void	*ft_vecget(t_vec *src, size_t index);
 int		ft_vecappend(t_vec *dest, t_vec *src);
 int		ft_vecncat(t_vec *dest, const void *src, size_t n);
+int		ft_vecfrom(t_vec *dest, const void *src, size_t n, size_t type);
+void	*ft_vecget(t_vec *src, size_t index);
+int		ft_vecpop(void *dest, t_vec *src);
 
 #endif
