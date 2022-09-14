@@ -6,7 +6,7 @@
 #    By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/08 13:27:42 by altikka           #+#    #+#              #
-#    Updated: 2022/06/15 19:33:18 by altikka          ###   ########.fr        #
+#    Updated: 2022/09/14 16:02:49 by altikka          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,8 @@ SRCS = ft_putchar.c ft_putstr.c ft_putendl.c ft_putnbr.c ft_strlen.c \
 	   ft_isspace.c ft_strrev.c get_next_line.c ft_sqrt.c ft_pow.c ft_powl.c \
 	   ft_anylen.c ft_anytoa.c ft_isinf.c \
 	   ft_vecnew.c ft_vecdel.c ft_veccpy.c ft_vecresize.c ft_vecpush.c \
-	   ft_vecappend.c ft_vecncat.c
+	   ft_vecappend.c ft_vecncat.c ft_vecfrom.c ft_vecget.c ft_vecpop.c \
+	   ft_vecinsert.c ft_vecremove.c
 
 PRINTF_INCS = -I. -I./ft_printf/includes
 PRINTF_DIR = ft_printf/src/
