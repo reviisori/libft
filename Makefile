@@ -6,7 +6,7 @@
 #    By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/08 13:27:42 by altikka           #+#    #+#              #
-#    Updated: 2022/09/28 09:54:37 by altikka          ###   ########.fr        #
+#    Updated: 2022/10/21 17:25:50 by altikka          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -74,18 +74,18 @@ YELLOW = \033[38;5;220m
 all: $(NAME)
 
 $(NAME):
-	@echo "$(LGRAY)[libft] $(BLUE)Making object files...$(EOC)"
+	#@echo "$(LGRAY)[libft] $(BLUE)Making object files...$(EOC)"
 	@gcc -c $(FLGS) $(PRINTF_INCS) $(SRCS) $(PRINTF_SRCS)
-	@echo "$(LGRAY)[libft] $(BLUE)Creating library...$(EOC)"
+	#@echo "$(LGRAY)[libft] $(BLUE)Creating library...$(EOC)"
 	@ar rcs $(NAME) $(OBJS) $(PRINTF_OBJS)
-	@echo "$(LGRAY)[libft] $(BLUE)Library created!$(EOC)"
+	#@echo "$(LGRAY)[libft] $(BLUE)Library created!$(EOC)"
 
 clean:
-	@echo "$(LGRAY)[libft] $(RUST)Cleaning object files...$(EOC)"
+	#@echo "$(LGRAY)[libft] $(RUST)Cleaning object files...$(EOC)"
 	@rm -f $(OBJS) $(PRINTF_OBJS)
 
 fclean: clean
-	@echo "$(LGRAY)[libft] $(RUST)Removing library...$(EOC)"
+	#@echo "$(LGRAY)[libft] $(RUST)Removing library...$(EOC)"
 	@rm -f $(NAME)
 
 re: fclean all
