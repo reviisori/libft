@@ -6,7 +6,7 @@
 #    By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/08 13:27:42 by altikka           #+#    #+#              #
-#    Updated: 2022/10/21 19:41:54 by altikka          ###   ########.fr        #
+#    Updated: 2022/10/27 15:00:48 by altikka          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,6 +37,7 @@ PRINTF_DIR = ft_printf/src/
 
 PRINTF_SRCS = $(PRINTF_DIR)ft_printf.c \
 	   $(PRINTF_DIR)ft_vasprintf.c \
+	   $(PRINTF_DIR)ft_dprintf.c \
 	   $(PRINTF_DIR)utilities.c \
 	   $(PRINTF_DIR)press.c \
 	   $(PRINTF_DIR)press_type.c \
@@ -57,8 +58,8 @@ PRINTF_SRCS = $(PRINTF_DIR)ft_printf.c \
 	   $(PRINTF_DIR)handlers.c
 
 OBJS = $(SRCS:.c=.o)
-PRINTF_OBJS = ft_printf.o ft_vasprintf.o utilities.o press.o press_type.o \
-	   inves_flags.o inves_width.o inves_preci.o inves_length.o \
+PRINTF_OBJS = ft_printf.o ft_vasprintf.o ft_dprintf.o utilities.o press.o \
+	   press_type.o inves_flags.o inves_width.o inves_preci.o inves_length.o \
 	   tc_char.o tc_dbl.o round_dbl.o tc_len.o tc_num.o tc_ptr.o tc_str.o \
 	   pad_nums_front.o pad_dbls_front.o pad_inf.o handlers.o
 
