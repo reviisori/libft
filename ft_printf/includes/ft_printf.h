@@ -6,7 +6,7 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/21 14:08:42 by altikka           #+#    #+#             */
-/*   Updated: 2022/06/15 19:49:57 by altikka          ###   ########.fr       */
+/*   Updated: 2022/10/27 14:57:37 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ static const t_jump	g_jump[11] = {
 
 int			ft_printf(const char *format, ...);
 int			ft_vasprintf(char **str, const char *format, va_list ap);
+int			ft_dprintf(int fd, const char *format, ...);
 int			press(t_vec *dest, const char *format, t_stat info);
 int			inves_flags(const char **fptr, t_stat *info);
 int			inves_width(const char **fptr, t_stat *info);
