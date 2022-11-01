@@ -6,7 +6,7 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:46:38 by altikka           #+#    #+#             */
-/*   Updated: 2022/09/28 09:53:09 by altikka          ###   ########.fr       */
+/*   Updated: 2022/11/01 13:01:28 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@
 # include <string.h>
 # include <stdint.h>
 
+# include "hashmap.h"
 # include "vec.h"
 # include "get_next_line.h"
 # include "ft_printf.h"
