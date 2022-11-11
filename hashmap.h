@@ -6,7 +6,7 @@
 /*   By: altikka & atenhune <@student.hive.fi>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 13:01:46 by altikka           #+#    #+#             */
-/*   Updated: 2022/11/01 17:37:23 by altikka          ###   ########.fr       */
+/*   Updated: 2022/11/11 16:07:48 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,6 @@ int				hash_resize(t_hashmap *src);
 void			hash_free(t_hashmap *src);
 int				hash_insert(t_hashmap *dest, char *key, int value);
 int				hash_lookup(t_hashmap *src, char *key);
-int				hash_get(t_hashmap *src, char *key);
+t_hash			*hash_get(t_hashmap *src, char *key);
 
 #endif
