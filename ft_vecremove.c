@@ -6,7 +6,7 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 15:36:05 by altikka           #+#    #+#             */
-/*   Updated: 2022/09/14 16:49:58 by altikka          ###   ########.fr       */
+/*   Updated: 2022/11/09 14:16:11 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int	ft_vecremove(t_vec *src, size_t index)
 	}
 	ft_memmove(
 		ft_vecget(src, index),
-		&src->data[src->type * (index + 1)],
+		ft_vecget(src, index + 1),
 		(src->len - index) * src->type);
 	src->len--;
 	return (1);
