@@ -6,13 +6,13 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 16:06:40 by altikka           #+#    #+#             */
-/*   Updated: 2021/11/25 16:09:01 by altikka          ###   ########.fr       */
+/*   Updated: 2022/11/28 16:08:24 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_intlen(int n)
+int	ft_intlen(long n)
 {
 	int	len;
 
