@@ -6,7 +6,7 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:46:38 by altikka           #+#    #+#             */
-/*   Updated: 2022/11/28 16:08:23 by altikka          ###   ########.fr       */
+/*   Updated: 2022/11/28 16:40:59 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,7 @@ void		ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 int			ft_isspace(int c);
-int			ft_intlen(long n);
+int			ft_intlen(int n);
 int			ft_abs(int i);
 int			ft_strncasecmp(char const *s1, char const *s2, size_t n);
 char		*ft_strndup(char const *src, size_t len);
