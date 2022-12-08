@@ -6,7 +6,7 @@
 /*   By: altikka <altikka@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/02 17:46:38 by altikka           #+#    #+#             */
-/*   Updated: 2022/11/28 16:40:59 by altikka          ###   ########.fr       */
+/*   Updated: 2022/12/08 10:33:22 by altikka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,7 +113,9 @@ void		ft_strdelarr(char ***asa);
 void		ft_memdelarr(void ***apa);
 
 int			ft_isnbr(const char *str);
+int			ft_isupper(int c);
 size_t		ft_cntchr(const char *str, const char c);
+size_t		ft_nbrlen(const char *src);
 long		ft_atol(char const *s);
 
 #endif
